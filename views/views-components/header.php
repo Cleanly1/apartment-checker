@@ -15,7 +15,7 @@ $site = $config['site'];
 
 <body>
 
-	<nav>
+	<nav class="container navigation">
 		<ul>
 			<li>
 				<a href="/">Home</a>
@@ -28,3 +28,4 @@ $site = $config['site'];
 			</li>
 		</ul>
 	</nav>
+	<div class="container">
