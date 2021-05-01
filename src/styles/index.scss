@@ -1,5 +1,8 @@
+@import-sanitize;
+@import-normalize;
 
-@import "normalize.css";
-@import "sanitize.css";
+// Imports variables etc
+@import "helpers/_helpers";
 
+// Imports components
 @import "components/_components";
