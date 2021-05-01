@@ -1,0 +1,9 @@
+{
+	"name": "cleanly1/apartment-comparer",
+	"description": "",
+	"autoload": {
+		"classmap": [
+		"./factory"
+		]
+	}
+}
