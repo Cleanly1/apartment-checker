@@ -3,3 +3,5 @@ vendor
 .env
 config.php
 /dist/*
+
+!.gitkeep
