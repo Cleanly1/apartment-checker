@@ -7,13 +7,10 @@ $config = require __DIR__ . '/config.php';
 
 $pdo = Connection::make($config['database']);
 
-// Now we can use the Router class and register the routes.
-$router = new Router([
-	'' => __DIR__ . '/views/index.view.php',
-	'input' => __DIR__ . '/views/input.view.php',
-	'404' => __DIR__ . '/views/404.view.php',
+$routes = new Routes('.view', '/views', "/../..");
 
-]);
+// Now we can use the Router class and register the routes.
+$router = new Router($routes->getRoutes());
 
 // Direct the router based on the current request URI and require a view file.
 require $router->direct(Request::uri());
